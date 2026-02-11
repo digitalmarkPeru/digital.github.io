@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Arena Aritmética</title>
+  <title>GO OLIVERITO GO</title>
   <style>
     :root{
       --bg:#0b1020; --card:#121a33; --muted:#9fb0ff;
@@ -61,7 +61,7 @@
 </head>
 <body>
   <div class="wrap">
-    <h1>Arena Aritmética</h1>
+    <h1>GO OLIVERITO GO</h1>
     <p class="sub">Resuelve aritmética para ganar XP, monedas y subir de nivel. Si fallas, pierdes vida.</p>
 
     <div class="grid">
@@ -105,7 +105,7 @@
       </div>
 
       <div class="card">
-        <h2 style="margin:0 0 10px;font-size:16px">Tienda</h2>
+        <h2 style="margin:0 0 10px;font-size:16px">HelicoTienda</h2>
         <div class="shop">
           <div class="item">
             <div class="left">
@@ -152,7 +152,7 @@
 
   <script>
     // Estado (persistente)
-    const LS_KEY = "arena_aritmetica_v1";
+    const LS_KEY = "GO_OLIVERITO_GO_v1";
     const state = {
       lvl: 1,
       xp: 0,
@@ -574,7 +574,7 @@
         }
         state.hp += 1;
         ui.msg.innerHTML = `<span class="ok">Compraste +1 vida.</span>`;
-        logLine("Compró +1 vida.", "TIENDA");
+        logLine("Compró +1 vida.", "HelicoTIENDA");
       });
     });
 
@@ -582,7 +582,7 @@
       buy(12, ()=>{
         state.hint += 1;
         ui.msg.innerHTML = `<span class="ok">Pista comprada.</span> Pulsa H para usarla.`;
-        logLine("Compró pista.", "TIENDA");
+        logLine("Compró pista.", "HelicoTIENDA");
       });
     });
 
@@ -590,7 +590,7 @@
       buy(18, ()=>{
         state.shield += 1;
         ui.msg.innerHTML = `<span class="ok">Escudo comprado.</span> Se activará en el próximo fallo.`;
-        logLine("Compró escudo.", "TIENDA");
+        logLine("Compró escudo.", "HelicoTIENDA");
       });
     });
 
@@ -598,7 +598,7 @@
       buy(30, ()=>{
         state.doubleXp += 1;
         ui.msg.innerHTML = `<span class="ok">Doble XP activado</span> para el próximo acierto.`;
-        logLine("Compró doble XP.", "TIENDA");
+        logLine("Compró doble XP.", "HelicoTIENDA");
       });
     });
 
@@ -606,7 +606,7 @@
       buy(10, ()=>{
         state.rerollTokens += 1;
         ui.msg.innerHTML = `<span class="ok">Re-roll comprado.</span> Úsalo con el botón Re-roll.`;
-        logLine("Compró re-roll.", "TIENDA");
+        logLine("Compró re-roll.", "HelicoTIENDA");
       });
     });
 
